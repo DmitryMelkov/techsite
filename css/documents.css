@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: Verdana, Tahoma, sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+/************** header tag styles **************/
+
+h1 {
+  font: bold 120% Arial, sans-serif;
+  color: #334d55;
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+  font: bold 114% Arial, sans-serif;
+  color: #006699;
+  margin: 0px;
+  padding: 0px;
+}
+
+h3 {
+  font: bold 100% Arial, sans-serif;
+  color: #334d55;
+  margin: 0px;
+  padding: 0px;
+}
+
+h4 {
+  font: 100% Arial, sans-serif;
+  color: #333333;
+  margin: 0px;
+  padding: 0px;
+}
+
+h5 {
+  font: 100% Arial, sans-serif;
+  color: #334d55;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main__header {
+  color: black;
+  text-align: center;
+  font-size: 32px;
+}
+
+.main__text {
+  text-align: left;
+}
+
+.main__img {
+  text-align: center;
+}
