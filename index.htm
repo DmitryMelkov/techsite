@@ -80,252 +80,266 @@
     <li></li>
 
   </ul>
-  <div class="main__name-container"><h3 class="main__name">Технологический</br>портал</h3></div>
-  <div class="main__btn-container">
-    <button class="main__btn-tech">Технологический сайт</button>
-    <button class="main__btn-libr">Библиотека</button>
+  <div class="header__container">
+    <div class="header__name-container">
+      <h3 class="header__title">Технологический портал</h3>
+    </div>
+    <div class="header__btn-container">
+      <button class="header__btn header__btn-tech">Технологический сайт</button>
+      <button class="header__btn header__btn-libr">Библиотека</button>
+    </div>
   </div>
+
   <div class="container intro-container">
     <div class="logo">
       <img src="images/logo.png" alt="img" class="logo-img">
     </div>
     <div class="library">
       <!-- <button class="main__btn-back">Назад</button> -->
-      <ul class="content__libr">
+      <button class="library__btn-libr-back libr-back">Назад</button>
+      <div>
+        <ul class="content__libr list-reset">
           <li class="content__libr-item">
-            <a href="#" class="content__libr-link" data-tab="#sublibrary1">САИМ</a>
-          </li>
-          <li class="content__libr-item">
-            <a href="#" class="content__libr-link" data-tab="#sublibrary2">СИЗОД</a>
-          </li>
-          <li class="content__libr-item">
-            <a href="#" class="content__libr-link" data-tab="#sublibrary3">Угольное производство</a>
+            <a href="#" class="content__libr-link tabs-link" data-tab="#sublibrary1">САИМ</a>
           </li>
           <li class="content__libr-item">
-            <a href="#" class="content__libr-link" data-tab="#sublibrary4">УТВХ</a>
+            <a href="#" class="content__libr-link tabs-link" data-tab="#sublibrary2">СИЗОД</a>
           </li>
           <li class="content__libr-item">
-            <a href="#" class="content__libr-link" data-tab="#sublibrary5">УЭХ</a>
+            <a href="#" class="content__libr-link tabs-link" data-tab="#sublibrary3">Угольное производство</a>
           </li>
-      </ul>
-      <div class="library-nav">
-        <ul id="sublibrary1" class="library-nav__intro">
-          <li>
-            <a href="library/saim/instructions.htm" target="FrM" class="library-nav__link"> Инструкции </a>
+          <li class="content__libr-item">
+            <a href="#" class="content__libr-link tabs-link" data-tab="#sublibrary4">УТВХ</a>
           </li>
-          <li>
-            <a href="#" target="FrM" class="library-nav__link">Схемы</a>
-          </li>
-          <li>
-            <a href="#" target="FrM" class="library-nav__link">Вкладка3</a>
-          </li>
-          <li>
-            <a href="#" target="FrM" class="library-nav__link">Вкладка4</a>
+          <li class="content__libr-item">
+            <a href="#" class="content__libr-link tabs-link" data-tab="#sublibrary5">УЭХ</a>
           </li>
         </ul>
-        <ul id="sublibrary2" class="library-nav__intro">
-          <li>
-            <a href="#" target="FrM" class="library-nav__link">Вкладка1</a>
-          </li>
-          <li>
-            <a href="#" target="FrM" class="library-nav__link">Вкладка2</a>
-          </li>
-          <li>
-            <a href="#" target="FrM" class="library-nav__link">Вкладка3</a>
-          </li>
-          <li>
-            <a href="#" target="FrM" class="library-nav__link">Вкладка4</a>
-          </li>
-        </ul>
-        <ul id="sublibrary3" class="library-nav__intro">
-          <li>
-            <a href="#" target="FrM" class="library-nav__link">Вкладка1</a>
-          </li>
-          <li>
-            <a href="#" target="FrM" class="library-nav__link">Вкладка2</a>
-          </li>
-          <li>
-            <a href="#" target="FrM" class="library-nav__link">Вкладка3</a>
-          </li>
-          <li>
-            <a href="#" target="FrM" class="library-nav__link">Вкладка4</a>
-          </li>
-        </ul>
-        <ul id="sublibrary4" class="library-nav__intro">
-          <li>
-            <a href="#">Вкладка1</a>
-          </li>
-          <li>
-            <a href="#">Вкладка2</a>
-          </li>
-          <li>
-            <a href="#">Вкладка3</a>
-          </li>
-          <li>
-            <a href="#">Вкладка4</a>
-          </li>
-        </ul>
-        <ul id="sublibrary5" class="library-nav__intro">
-          <li>
-            <a href="#">Вкладка1</a>
-          </li>
-          <li>
-            <a href="#">Вкладка2</a>
-          </li>
-          <li>
-            <a href="#">Вкладка3</a>
-          </li>
-          <li>
-            <a href="#">Вкладка4</a>
-          </li>
-        </ul>
+        <div class="library-nav">
+          <ul id="sublibrary1" class="library-nav__intro tabs-intro list-reset">
+            <li>
+              <a href="library/saim/instructions.htm" target="FrM" class="library-nav__link"> Инструкции </a>
+            </li>
+            <li>
+              <a href="#" target="FrM" class="library-nav__link">Схемы</a>
+            </li>
+            <li>
+              <a href="#" target="FrM" class="library-nav__link">Вкладка3</a>
+            </li>
+            <li>
+              <a href="#" target="FrM" class="library-nav__link">Вкладка4</a>
+            </li>
+          </ul>
+          <ul id="sublibrary2" class="library-nav__intro tabs-intro list-reset">
+            <li>
+              <a href="#" target="FrM" class="library-nav__link">Вкладка1</a>
+            </li>
+            <li>
+              <a href="#" target="FrM" class="library-nav__link">Вкладка2</a>
+            </li>
+            <li>
+              <a href="#" target="FrM" class="library-nav__link">Вкладка3</a>
+            </li>
+            <li>
+              <a href="#" target="FrM" class="library-nav__link">Вкладка4</a>
+            </li>
+          </ul>
+          <ul id="sublibrary3" class="library-nav__intro tabs-intro list-reset">
+            <li>
+              <a href="#" target="FrM" class="library-nav__link">Вкладка1</a>
+            </li>
+            <li>
+              <a href="#" target="FrM" class="library-nav__link">Вкладка2</a>
+            </li>
+            <li>
+              <a href="#" target="FrM" class="library-nav__link">Вкладка3</a>
+            </li>
+            <li>
+              <a href="#" target="FrM" class="library-nav__link">Вкладка4</a>
+            </li>
+          </ul>
+          <ul id="sublibrary4" class="library-nav__intro tabs-intro list-reset">
+            <li>
+              <a href="#">Вкладка1</a>
+            </li>
+            <li>
+              <a href="#">Вкладка2</a>
+            </li>
+            <li>
+              <a href="#">Вкладка3</a>
+            </li>
+            <li>
+              <a href="#">Вкладка4</a>
+            </li>
+          </ul>
+          <ul id="sublibrary5" class="library-nav__intro tabs-intro list-reset">
+            <li>
+              <a href="#">Вкладка1</a>
+            </li>
+            <li>
+              <a href="#">Вкладка2</a>
+            </li>
+            <li>
+              <a href="#">Вкладка3</a>
+            </li>
+            <li>
+              <a href="#">Вкладка4</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
     </div>
     <div class="content">
-      <button class="main__btn-back">Назад</button>
-      <ul class="content__list">
-        <li class="content__list-item">
-          <a href="#" class="content__list-link" data-tab="#subglobal1">CARBON</a>
-        </li>
-        <li class="content__list-item">
-          <a href="#" class="content__list-link" data-tab="#subglobal2">Угольное производство</a>
-        </li>
-        <li class="content__list-item">
-          <a href="#" class="content__list-link" data-tab="#subglobal3">Узлы учета</a>
-        </li>
-        <li class="content__list-item">
-          <a href="#" class="content__list-link" data-tab="#subglobal4">УТВХ</a>
-        </li>
-        <li class="content__list-item">
-          <a href="#" class="content__list-link" data-tab="#subglobal5">СИЗОД</a>
-        </li>
-        <li class="content__list-item">
-          <a href="#" class="content__list-link" data-tab="#subglobal6">Ресурсы</a>
-        </li>
-      </ul>
-      <div class="content-nav">
-        <ul id="subglobal1" class="content-nav__intro active">
-          <li>
-            <a href="production/carbon/sushilki/sushilki.htm" target="FrM" class="content-nav__link">Сушилки</a>
+      <button class="content__btn-tech-back content-back">Назад</button>
+      <div>
+        <ul class="content__list list-reset">
+          <li class="content__list-item">
+            <a href="#" class="content__list-link tabs-link" data-tab="#subglobal1">CARBON</a>
           </li>
-          <li>
-            <a href="production/carbon/pechiMpa/pechiMpa.htm" target="FrM" class="content-nav__link">Печи МПА</a>
+          <li class="content__list-item">
+            <a href="#" class="content__list-link tabs-link" data-tab="#subglobal2">Угольное производство</a>
           </li>
-          <li>
-            <a href="production/carbon/pechiVr/pechiVr.htm" target="FrM" class="content-nav__link">Печи ВР</a>
+          <li class="content__list-item">
+            <a href="#" class="content__list-link tabs-link" data-tab="#subglobal3">Узлы учета</a>
           </li>
-          <li>
-            <a href="production/carbon/melnizi/melnizi.htm" target="FrM" class="content-nav__link">Мельницы</a>
+          <li class="content__list-item">
+            <a href="#" class="content__list-link tabs-link" data-tab="#subglobal4">УТВХ</a>
           </li>
-          <li>
-            <a href="production/carbon/energy-resources/resources.htm" target="FrM" class="content-nav__link">Отчеты по
-              энергоресурсам</a>
+          <li class="content__list-item">
+            <a href="#" class="content__list-link tabs-link" data-tab="#subglobal5">СИЗОД</a>
           </li>
-          <li>
-            <a href="production/carbon/k296/k296.htm" target="FrM" class="content-nav__link">Корпус 296</a>
-          </li>
-          <li>
-            <a href="production/carbon/notisi/notisi.htm" target="FrM" class="content-nav__link">Нотисы</a>
+          <li class="content__list-item">
+            <a href="#" class="content__list-link tabs-link" data-tab="#subglobal6">Ресурсы</a>
           </li>
         </ul>
-        <ul id="subglobal2" class="content-nav__intro">
-          <li>
-            <a href="production/ugolProduction/pechiVrK266/pechiVrK266.htm" target="FrM" class="content-nav__link">Вр.
-              печи активации к.266</a>
-          </li>
-          <li>
-            <a href="production/ugolProduction/korp10b/korp10b-activaziya.htm" target="FrM"
-              class="content-nav__link">Отделение
-              активации к.10б</a>
-          </li>
-          <li>
-            <a href="production/ugolProduction/korp10b/korp10b-carbonizaziya.htm" target="FrM"
-              class="content-nav__link">Отделение
-              карбонизации к.10б</a>
-          </li>
-          <li>
-            <a href="production/ugolProduction/smolohozyaistvo/smolohozyaistvo.htm" target="FrM"
-              class="content-nav__link">Смолохозяйство</a>
-          </li>
-          <li>
-            <a href="production/ugolProduction/korp9a/korp9a.htm" target="FrM" class="content-nav__link">Корп. 9а</a>
-          </li>
-          <li>
-            <a href="production/ugolProduction/rashodPara/rashodPara.htm" target="FrM" class="content-nav__link">Расход
-              пара</a>
-          </li>
-        </ul>
-        <ul id="subglobal3" class="content-nav__intro ">
-          <li>
-            <a href="production/uzliUcheta/energyReports/energyReports.htm" target="FrM"
-              class="content-nav__link">Отчеты
-              по энергоресурсам</a>
-          </li>
-          <li>
-            <a href="production/uzliUcheta/parametersEnergyReports/parametersEnergyReports.htm" target="FrM"
-              class="content-nav__link">Параметры узлов учета</a>
-          </li>
-          <li>
-            <a href="production/uzliUcheta/vodaPitivayRechnayStoki/vodaPitivayRechnayStoki.htm" target="FrM"
-              class="content-nav__link">Вода питьевая и речная + стоки</a>
-          </li>
-          <li>
-            <a href="production/uzliUcheta/prirodGaz/prirodGaz.htm" target="FrM" class="content-nav__link">Природный
-              газ</a>
-          </li>
-        </ul>
-        <ul id="subglobal4" class="content-nav__intro">
-          <li>
-            <a href="production/utvh/kotelnaya/kotelnaya.htm" target="FrM" class="content-nav__link">
-              Котельная к.265, к.312
-            </a>
-          </li>
-          <li>
-            <a href="production/utvh/podmeshka/podmeshka.htm" target="FrM" class="content-nav__link">
-              Станция подмешивания
-            </a>
-          </li>
-          <li>
-            <a href="production/utvh/teploobmennikK265/teploobmennikK265.htm" target="FrM" class="content-nav__link">
-              Теплообменник
-            </a>
-          </li>
-          <li>
-            <a href="production/utvh/uzliUchetaUtvh/uzliUchetaUtvh.htm" target="FrM" class="content-nav__link">
-              Отчеты по энергоресурсам
-            </a>
-          </li>
-        </ul>
-        <ul id="subglobal5" class="content-nav__intro">
-          <li>
-            <a href="production/sizod/zeh3linii/zeh3linii.htm" target="FrM" class="content-nav__link">
-              Автоматические линии
-            </a>
-          </li>
-          <li>
-            <a href="production/sizod/otopleniek301/otoplenieK301.htm" target="FrM" class="content-nav__link">
-              Отопительная вода к.301
-            </a>
-          </li>
-          <li>
-            <a href="production/sizod/otopleniek302/otoplenieK302.htm" target="FrM" class="content-nav__link">
-              Отопительная вода к.302
-            </a>
-          </li>
-          <li>
-            <a href="production/sizod/uzliUcheta/uzliUchetaSizod.htm" target="FrM" class="content-nav__link">
-              Отчеты по энергоресурсам
-            </a>
-          </li>
-        </ul>
-        <ul id="subglobal6" class="content-nav__intro">
-          <li>
-            <a href="production/resources/energyResources/energyResources.htm" target="FrM" class="content-nav__link">
-              Энергоресурсы
-            </a>
-          </li>
-        </ul>
+        <div class="content-nav">
+          <ul id="subglobal1" class="content-nav__intro tabs-intro list-reset">
+            <li>
+              <a href="production/carbon/sushilki/sushilki.htm" target="FrM" class="content-nav__link">Сушилки</a>
+            </li>
+            <li>
+              <a href="production/carbon/pechiMpa/pechiMpa.htm" target="FrM" class="content-nav__link">Печи МПА</a>
+            </li>
+            <li>
+              <a href="production/carbon/pechiVr/pechiVr.htm" target="FrM" class="content-nav__link">Печи ВР</a>
+            </li>
+            <li>
+              <a href="production/carbon/melnizi/melnizi.htm" target="FrM" class="content-nav__link">Мельницы</a>
+            </li>
+            <li>
+              <a href="production/carbon/energy-resources/resources.htm" target="FrM" class="content-nav__link">Отчеты
+                по
+                энергоресурсам</a>
+            </li>
+            <li>
+              <a href="production/carbon/k296/k296.htm" target="FrM" class="content-nav__link">Корпус 296</a>
+            </li>
+            <li>
+              <a href="production/carbon/notisi/notisi.htm" target="FrM" class="content-nav__link">Нотисы</a>
+            </li>
+          </ul>
+          <ul id="subglobal2" class="content-nav__intro tabs-intro list-reset">
+            <li>
+              <a href="production/ugolProduction/pechiVrK266/pechiVrK266.htm" target="FrM" class="content-nav__link">Вр.
+                печи активации к.266</a>
+            </li>
+            <li>
+              <a href="production/ugolProduction/korp10b/korp10b-activaziya.htm" target="FrM"
+                class="content-nav__link">Отделение
+                активации к.10б</a>
+            </li>
+            <li>
+              <a href="production/ugolProduction/korp10b/korp10b-carbonizaziya.htm" target="FrM"
+                class="content-nav__link">Отделение
+                карбонизации к.10б</a>
+            </li>
+            <li>
+              <a href="production/ugolProduction/smolohozyaistvo/smolohozyaistvo.htm" target="FrM"
+                class="content-nav__link">Смолохозяйство</a>
+            </li>
+            <li>
+              <a href="production/ugolProduction/korp9a/korp9a.htm" target="FrM" class="content-nav__link">Корп. 9а</a>
+            </li>
+            <li>
+              <a href="production/ugolProduction/rashodPara/rashodPara.htm" target="FrM"
+                class="content-nav__link">Расход
+                пара</a>
+            </li>
+          </ul>
+          <ul id="subglobal3" class="content-nav__intro tabs-intro list-reset">
+            <li>
+              <a href="production/uzliUcheta/energyReports/energyReports.htm" target="FrM"
+                class="content-nav__link">Отчеты
+                по энергоресурсам</a>
+            </li>
+            <li>
+              <a href="production/uzliUcheta/parametersEnergyReports/parametersEnergyReports.htm" target="FrM"
+                class="content-nav__link">Параметры узлов учета</a>
+            </li>
+            <li>
+              <a href="production/uzliUcheta/vodaPitivayRechnayStoki/vodaPitivayRechnayStoki.htm" target="FrM"
+                class="content-nav__link">Вода питьевая и речная + стоки</a>
+            </li>
+            <li>
+              <a href="production/uzliUcheta/prirodGaz/prirodGaz.htm" target="FrM" class="content-nav__link">Природный
+                газ</a>
+            </li>
+          </ul>
+          <ul id="subglobal4" class="content-nav__intro tabs-intro list-reset">
+            <li>
+              <a href="production/utvh/kotelnaya/kotelnaya.htm" target="FrM" class="content-nav__link">
+                Котельная к.265, к.312
+              </a>
+            </li>
+            <li>
+              <a href="production/utvh/podmeshka/podmeshka.htm" target="FrM" class="content-nav__link">
+                Станция подмешивания
+              </a>
+            </li>
+            <li>
+              <a href="production/utvh/teploobmennikK265/teploobmennikK265.htm" target="FrM" class="content-nav__link">
+                Теплообменник
+              </a>
+            </li>
+            <li>
+              <a href="production/utvh/uzliUchetaUtvh/uzliUchetaUtvh.htm" target="FrM" class="content-nav__link">
+                Отчеты по энергоресурсам
+              </a>
+            </li>
+          </ul>
+          <ul id="subglobal5" class="content-nav__intro tabs-intro list-reset">
+            <li>
+              <a href="production/sizod/zeh3linii/zeh3linii.htm" target="FrM" class="content-nav__link">
+                Автоматические линии
+              </a>
+            </li>
+            <li>
+              <a href="production/sizod/otopleniek301/otoplenieK301.htm" target="FrM" class="content-nav__link">
+                Отопительная вода к.301
+              </a>
+            </li>
+            <li>
+              <a href="production/sizod/otopleniek302/otoplenieK302.htm" target="FrM" class="content-nav__link">
+                Отопительная вода к.302
+              </a>
+            </li>
+            <li>
+              <a href="production/sizod/uzliUcheta/uzliUchetaSizod.htm" target="FrM" class="content-nav__link">
+                Отчеты по энергоресурсам
+              </a>
+            </li>
+          </ul>
+          <ul id="subglobal6" class="content-nav__intro tabs-intro list-reset">
+            <li>
+              <a href="production/resources/energyResources/energyResources.htm" target="FrM" class="content-nav__link">
+                Энергоресурсы
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
+
     </div>
     <div class="logo">
       <div class="logo__content">
@@ -417,5 +431,5 @@
 <script src="js/title.js"></script>
 <script src="js/scriptNav.js"></script>
 <script src="js/btnscript.js"></script>
-<script src="js/scritpNavLibrary.js"></script>
+
 </html>

@@ -1,5 +1,5 @@
-const tabsBtn = document.getElementsByClassName('content__list-link');
-const tabsItems = document.querySelectorAll('.content-nav__intro');
+const tabsBtn = document.getElementsByClassName('tabs-link');
+const tabsItems = document.querySelectorAll('.tabs-intro');
 
 if (tabsBtn) {
   for (let i = 0; i < tabsBtn.length; i++) {
@@ -24,3 +24,5 @@ if (tabsBtn) {
     });
   }
 }
+
+

@@ -34,21 +34,21 @@ const renderComponent = () => {
   temperValue.innerHTML = `${store.temperature}`;
 };
 
-const fetchData = async () => {
-  let result = await fetch(`${link}&query=${store.city}`);
-  let data = await result.json();
+// const fetchData = async () => {
+//   let result = await fetch(`${link}&query=${store.city}`);
+//   let data = await result.json();
 
-  let {
-    current: { feelslike, temperature },
-  } = data;
+//   let {
+//     current: { feelslike, temperature },
+//   } = data;
 
-  store = {
-    ...store,
-    feelslike,
-    temperature,
-  };
+//   store = {
+//     ...store,
+//     feelslike,
+//     temperature,
+//   };
 
-  renderComponent();
-};
+//   renderComponent();
+// };
 
-fetchData();
+// fetchData();
