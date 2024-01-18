@@ -26,3 +26,11 @@ btnLibrback.addEventListener('click', () => {
   headerContainer.classList.remove('active');
   libr.classList.remove('active');
 });
+
+
+function reload() { 
+  document.getElementById('frame_menu').src += '';
+  document.getElementById('frame_data').src += ''; 
+} 
+refresh_techsite.addEventListener('click', reload);
+refresh_library.addEventListener('click', reload);  
