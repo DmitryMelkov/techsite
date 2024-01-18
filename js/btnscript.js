@@ -27,10 +27,15 @@ btnLibrback.addEventListener('click', () => {
   libr.classList.remove('active');
 });
 
+const refreshTechsite = document.getElementById('refresh_techsite');
+const refreshLibrary = document.getElementById('refresh_library');
+const frameMenu = document.getElementById('frame_menu');
+const frameData = document.getElementById('frame_data');
 
-function reload() { 
-  document.getElementById('frame_menu').src += '';
-  document.getElementById('frame_data').src += ''; 
-} 
-refresh_techsite.addEventListener('click', reload);
-refresh_library.addEventListener('click', reload);  
+const reload = () => {
+  frameMenu.src += '';
+  frameData.src += '';
+};
+
+refreshTechsite.addEventListener('click', reload);
+refreshLibrary.addEventListener('click', reload);
