@@ -631,6 +631,7 @@ td.storyLeft {
   line-height: 14px;
   color: green;
   font-weight: 500;
+  max-width:max-content;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
@@ -754,7 +755,7 @@ body::-webkit-scrollbar-thumb {
   width: 70%;
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 7%;
   position: absolute;
   top: 30%;
   left: 10%;
@@ -821,18 +822,14 @@ body::-webkit-scrollbar-thumb {
 .content__btn-tech-back,
 .library__btn-libr-back {
   padding: 15px;
-
   font-size: 20px;
   line-height: 0px;
   font-weight: 700;
   color: green;
-
   background-color: white;
   border: 1px solid green;
-  border-radius: 5px;
   transition: background-color .3s ease-in-out, color .3s ease-in-out;
   cursor: pointer;
-
 }
 
 .content__btn-tech-back:hover,
@@ -876,7 +873,7 @@ body::-webkit-scrollbar-thumb {
 
 .help__tooltip-container {
   position: absolute;
-  bottom: 40px;
+  bottom: 1%;
   right: 50px;
   z-index: 1;
   opacity: 1;
@@ -973,7 +970,32 @@ body::-webkit-scrollbar-thumb {
   color: #FFFFFF;
 }
 
+.help__tooltip-link {
+  text-decoration: none;
+}
+.help__tooltip-link:hover {
+  text-decoration: underline;
+}
+.help__tooltip-link:visited{
+  color:white;
+}
+
 @media (max-width: 1280px) {
+  .header__container{
+    gap:60px;
+  }
+  .header__btn {
+    padding: 10px 10px;
+  }
+  .help__tooltip-container {
+    bottom: -10px;
+  }
+}
+
+@media (min-width:1281px) and (max-width: 1800px) {
+  .header__container{
+    gap:60px;
+  }
   .header__btn {
     padding: 10px 10px;
   }
