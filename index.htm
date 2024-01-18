@@ -381,10 +381,21 @@
 </div>
 
 <div class="help__tooltip-container">
-  <button class="help__tooltip-btn" type="button" disabled> Некорректное отображение? </button>
-  <p class="help__tooltip-text"> Если некорректно показывает техсайт нужно почистить КЭШ браузера Для этого нажмите
-    <span class="help__tooltip-text-span">"Ctrl+Shift+Delete"</span> , а затем "очистить историю"
-  </p>
+  <button class="help__tooltip-btn-open tooltip-btn-open-js"> Некорректное отображение? </button>
+
+  <div class="help__tooltip tooltip-js">
+    <div class="help__tooltip-box">
+      <button class="help__tooltip-btn-close tooltip-btn-close-js btn-reset">
+        <img src="./pic/svg/close.svg" alt="">
+      </button>
+      <p class="help__tooltip-text"> Если некорректно показывает техсайт нужно почистить КЭШ браузера Для этого нажмите
+        <span class="help__tooltip-text-span">"Ctrl+Shift+Delete"</span> , а затем "очистить историю"
+      </p>
+    </div>
+  </div>
+
+
+
 </div>
 
 
@@ -433,5 +444,7 @@
 <script src="js/title.js"></script>
 <script src="js/scriptNav.js"></script>
 <script src="js/btnscript.js"></script>
+<script src="js/tooltip.js"></script>
+
 
 </html>
