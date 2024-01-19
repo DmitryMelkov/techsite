@@ -992,11 +992,32 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media (min-width:1281px) and (max-width: 1800px) {
+@media (min-width:1281px) and (max-width: 1373px) {
   .header__container{
-    gap:60px;
+    gap:8%;
   }
   .header__btn {
     padding: 10px 10px;
+  }
+}
+
+@media (min-width:1374px) and (max-width: 1900px) {
+  .header__container{
+    gap:15%;
+  }
+  .header__btn {
+    padding: 10px 10px;
+  }
+  .help__tooltip-container {
+    bottom: 5%;
+  }
+}
+
+@media (min-width:1901px) and (max-width:3500px)  {
+  .logo-img {
+    position: fixed;
+    top: 30px;
+    right: 0%;
+    left: 1%;
   }
 }
