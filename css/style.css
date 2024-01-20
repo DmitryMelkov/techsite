@@ -1,11 +1,60 @@
-/***********************************************/
-/* emx_nav_left.css                            */
-/* Use with template Halo_leftNav.html         */
-/***********************************************/
+/* fonts */
+@font-face {
+  font-family: "Bitter";
+  font-display: swap;
+  src: url("../fonts/Bitter-SemiBold.woff2") format("woff2"), url("../fonts/Bitter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
 
-/***********************************************/
-/* HTML tag styles                             */
-/***********************************************/
+@font-face {
+  font-family: "Bitter";
+  font-display: swap;
+  src: url("../fonts/Bitter-Regular.woff2") format("woff2"), url("../fonts/Bitter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bitter";
+  font-display: swap;
+  src: url("../fonts/Bitter-Medium.woff2") format("woff2"), url("../fonts/Bitter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
 
 
 .list-reset {
@@ -500,6 +549,7 @@ td.storyLeft {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
+  gap: 5px;
   width: 70%;
 
   position: absolute;
@@ -631,7 +681,7 @@ td.storyLeft {
   line-height: 14px;
   color: green;
   font-weight: 500;
-  max-width:max-content;
+  max-width: max-content;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
@@ -755,7 +805,7 @@ body::-webkit-scrollbar-thumb {
   width: 70%;
   display: flex;
   align-items: center;
-  gap: 7%;
+  gap: 10%;
   position: absolute;
   top: 30%;
   left: 10%;
@@ -769,8 +819,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header__name-container {
-  position: relative;
-  right: 3%;
+  /* position: relative;
+  right: 3%; */
 }
 
 .header__btn-container {
@@ -781,20 +831,25 @@ body::-webkit-scrollbar-thumb {
 .header__title {
   font-size: 30px;
   line-height: 40px;
-  font-weight: 700;
-  background-image: linear-gradient(45deg, green, #2b7fee);
+  font-weight: 600;
   color: transparent;
+  font-family: 'Bitter', sans-serif;
+  background-image: linear-gradient(45deg, green, #2b7fee);
   background-clip: text;
   -webkit-background-clip: text;
+
 }
 
 .header__btn {
-  padding: 10px 50px;
+  min-width: 350px;
+  padding: 15px 20px;
   display: flex;
+  justify-content: center;
   font-size: 24px;
-  line-height: 45px;
+  line-height: 30px;
   font-weight: 700;
   color: green;
+  font-family: 'Gilroy', sans-serif;
 
   background-color: white;
   border: 1px solid green;
@@ -873,7 +928,7 @@ body::-webkit-scrollbar-thumb {
 
 .help__tooltip-container {
   position: absolute;
-  bottom: 1%;
+  bottom: 40px;
   right: 50px;
   z-index: 1;
   opacity: 1;
@@ -973,51 +1028,133 @@ body::-webkit-scrollbar-thumb {
 .help__tooltip-link {
   text-decoration: none;
 }
+
 .help__tooltip-link:hover {
   text-decoration: underline;
 }
-.help__tooltip-link:visited{
-  color:white;
+
+.help__tooltip-link:visited {
+  color: white;
 }
 
-@media (max-width: 1280px) {
-  .header__container{
-    gap:60px;
+/* @media (max-width: 1280px) {
+  .header__container {
+    gap: 60px;
   }
+
   .header__btn {
     padding: 10px 10px;
   }
+
   .help__tooltip-container {
     bottom: -10px;
   }
 }
 
 @media (min-width:1281px) and (max-width: 1373px) {
-  .header__container{
-    gap:8%;
+  .header__container {
+    gap: 8%;
   }
+
   .header__btn {
     padding: 10px 10px;
   }
 }
 
 @media (min-width:1374px) and (max-width: 1900px) {
-  .header__container{
-    gap:15%;
+  .header__container {
+    gap: 15%;
   }
+
   .header__btn {
     padding: 10px 10px;
   }
+
   .help__tooltip-container {
     bottom: 5%;
   }
 }
 
-@media (min-width:1901px) and (max-width:3500px)  {
+@media (min-width:1901px) and (max-width:3500px) {
   .logo-img {
     position: fixed;
     top: 30px;
     right: 0%;
     left: 1%;
+  }
+} */
+
+
+@media (max-width: 2800px) {
+  .intro-container {
+    max-width: 2800px;
+  }
+}
+
+
+
+@media (max-width: 1710px) {
+  .intro-container {
+    max-width: 1920px;
+  }
+
+  .header__container {
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .header__btn {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 1420px) {
+  .header__btn {
+    padding: 10px;
+    min-width: 250px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .header__title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .intro-container {
+    height: 110px;
+  }
+
+  .header__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .header__btn {
+    padding: 10px;
+    min-width: 221px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .content__btn-tech-back,
+  .library__btn-libr-back {
+    /* position: absolute;
+    top: 53px;
+    right: 23px;
+    z-index: 1; */
+  }
+
+  .content,
+  .library {
+    max-width: 650px;
+    top: 20%;
+  }
+
+  .content__list {
+    gap: 10px;
   }
 }
