@@ -650,7 +650,7 @@ td.storyLeft {
 .page-sidebar {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 10px 60px 10px;
   border-bottom: 1px solid #cccccc;
 }
 
@@ -862,7 +862,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header__btn:hover::before {
-width: 100%;
+  width: 100%;
 }
 
 .header__btn::before {
@@ -938,7 +938,7 @@ width: 100%;
 .help__tooltip-container {
   position: absolute;
   bottom: 0%;
-  right: 50px;
+  left: 10px;
   z-index: 1;
   opacity: 1;
 }
