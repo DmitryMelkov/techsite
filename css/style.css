@@ -450,6 +450,7 @@ td.storyLeft {
 }
 
 .intro-container {
+  max-width: 2800px;
   padding-top: 30px;
   padding-bottom: 20px;
   display: flex;
@@ -554,7 +555,7 @@ td.storyLeft {
   width: 70%;
 
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 10%;
   z-index: -1;
 
@@ -565,7 +566,7 @@ td.storyLeft {
 
   opacity: 0;
   transform: translateX(-2000px);
-  transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+  transition: opacity .5s ease-in-out, transform .5s ease-in-out;
 }
 
 .content.active {
@@ -908,6 +909,7 @@ body::-webkit-scrollbar-thumb {
   width: 70%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 10%;
   position: absolute;
   top: 20%;
@@ -919,8 +921,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   box-shadow: 0 0 0 1px #00000009, 0 4px 25px #00000012;
 
-
-  transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+  transition: opacity .5s ease-in-out, transform .5s ease-in-out;
 }
 
 .header__container.active {
@@ -1042,7 +1043,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   box-shadow: 0 0 0 1px #00000009, 0 4px 25px #00000012;
 
-  transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+  transition: opacity .5s ease-in-out, transform .5s ease-in-out;
 }
 
 .library.active {
@@ -1165,7 +1166,9 @@ body::-webkit-scrollbar-thumb {
   .intro-container {
     max-width: 2800px;
   }
+}
 
+@media (max-width: 1920px) {
   .logo {
     margin-right: 20px;
   }
@@ -1275,6 +1278,10 @@ body::-webkit-scrollbar-thumb {
   .library {
     max-width: 650px;
     top: 20%;
+  }
+
+  .content {
+    top: 12%;
   }
 
   .content__list {
