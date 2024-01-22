@@ -505,7 +505,7 @@ td.storyLeft {
 
 
 .logo {
-  margin-right: 20px;
+  margin-right: 60px;
   display: flex;
   flex-direction: column;
   display: inline;
@@ -801,82 +801,96 @@ body::-webkit-scrollbar-thumb {
 
 .header {
   position: relative;
+  overflow: hidden;
 }
 
 .header__background {
-  position:absolute;
-  width:100%;
+  position: absolute;
+  width: 100%;
   height: 100%;
   top: 0%;
-  left:0%;
+  left: 0%;
   z-index: -1;
 }
 
 .box__orange-left {
   position: absolute;
   width: 5%;
-	height: 48%;
+  height: 48%;
   left: 8%;
-	transform: skew(160deg);
+  transform: skew(160deg);
   background-color: #ff7f00;
+  opacity: 0.8;
+
 }
 
 .box__blue-left {
   position: absolute;
   width: 5%;
-	height: 100%;
+  height: 100%;
   left: -2%;
-	transform: skew(160deg);
-  background-color: rgb(30, 126, 209);
+  transform: skew(160deg);
+  background-color: rgb(64, 24, 239);
   z-index: -2;
+
+
 }
+
 .box__green-left {
   position: absolute;
   width: 3%;
-	height: 35%;
-  top:50%;
+  height: 35%;
+  top: 50%;
   left: 12%;
-	transform: skew(160deg);
-  background-color: green;
-  opacity: 0.5;
+  transform: skew(160deg);
+  /* background-color: #ffcc00; */
+  background: linear-gradient(to right, #ff7f00, #ffcc00);
+  opacity: 0.8;
+
 }
+
 .box__black-left {
   position: absolute;
   width: 5%;
-	height: 35%;
-  top:48%;
+  height: 35%;
+  top: 48%;
   left: 2%;
-	transform: skew(160deg);
-  background-color: rgb(64, 24, 239);
+  transform: skew(160deg);
+  /* background-color: rgb(64, 24, 239); */
+  background: linear-gradient(to right, rgb(64, 24, 239), #ff7f00);
 }
 
 .box__orange-right {
-position: absolute;
-width: 15%;
-height: 47%;
-top: 25%;
-right: -0%;
-transform: skew(160deg);
-background-color: #ff7f00;
+  position: absolute;
+  width: 15%;
+  height: 47%;
+  top: 25%;
+  right: -0%;
+  transform: skew(160deg);
+  background-color: #d5d5d5;
 }
 
 .box__blue-right {
- position: absolute;
- width: 3%;
- height: 29%;
- top:71%;
- right: 15.8%;
- transform: skew(160deg);
- background-color: rgb(30, 126, 209);
+  position: absolute;
+  width: 3%;
+  height: 29%;
+  top: 71%;
+  right: 15.8%;
+  transform: skew(160deg);
+  /* background-color: rgb(30, 126, 209); */
+  background: linear-gradient(to top, rgb(30, 126, 209), #d5d5d5);
+
 }
 
 .box__green-right {
   position: absolute;
   width: 10%;
-	height: 100%;
+  height: 100%;
   right: 0%;
-	transform: skew(160deg);
-  background-color: green;
+  transform: skew(160deg);
+  /* background-color: green; */
+  background: linear-gradient(to bottom, green, #d5d5d5 30%, green);
+
   z-index: -2;
   opacity: 0.7;
 }
@@ -884,10 +898,11 @@ background-color: #ff7f00;
 .box__black-right {
   position: absolute;
   width: 5%;
-	height: 25%;
+  height: 25%;
   right: 14.2%;
-	transform: skew(160deg);
-  background-color: rgb(209, 0, 111);
+  transform: skew(160deg);
+  /* background-color: rgb(209, 0, 111); */
+  background: linear-gradient(rgb(209, 0, 111), #d5d5d5);
   z-index: -2;
 }
 
@@ -922,11 +937,11 @@ background-color: #ff7f00;
   font-size: 30px;
   line-height: 40px;
   font-weight: 600;
-  color: transparent;
+  color: #115d11;
   font-family: 'Bitter', sans-serif;
-  background-image: linear-gradient(45deg, blue, green);
+  /* background-image: linear-gradient(45deg, blue, green);
   background-clip: text;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
 }
 
 .header__btn {
@@ -954,13 +969,14 @@ background-color: #ff7f00;
 }
 
 .header__btn::before {
-  background: linear-gradient(45deg, rgb(89, 255, 70) 20%, rgb(41, 240, 231), rgb(229, 253, 90) 87%);
+  /* background: linear-gradient(45deg, rgb(89, 255, 70) 20%, rgb(41, 240, 231), rgb(229, 253, 90) 87%); */
   content: '';
   position: absolute;
   width: 0%;
   height: 100%;
   top: 50%;
   left: 50%;
+  background-color: rgba(0, 128, 0, 0.9);
   transform: translate(-50%, -50%);
   z-index: -1;
   transition: all 0.6s ease;
@@ -968,7 +984,7 @@ background-color: #ff7f00;
 
 .header__btn-tech:hover,
 .header__btn-libr:hover {
-  color: black;
+  color: white;
 }
 
 .content__btn-tech-back,
@@ -1067,8 +1083,8 @@ background-color: #ff7f00;
 
 .help__tooltip-btn-open {
   padding: 10px;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 14px;
   font-weight: 700;
   color: black;
   background-color: white;
@@ -1137,6 +1153,10 @@ background-color: #ff7f00;
 @media (max-width: 2800px) {
   .intro-container {
     max-width: 2800px;
+  }
+
+  .logo {
+    margin-right: 20px;
   }
 }
 
