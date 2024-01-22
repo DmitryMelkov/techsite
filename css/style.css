@@ -813,18 +813,7 @@ body::-webkit-scrollbar-thumb {
   z-index: -1;
 }
 
-.box__orange-left {
-  position: absolute;
-  width: 5%;
-  height: 48%;
-  left: 8%;
-  transform: skew(160deg);
-  background-color: #ff7f00;
-  opacity: 0.8;
-
-}
-
-.box__blue-left {
+.box__first-left {
   position: absolute;
   width: 5%;
   height: 100%;
@@ -832,24 +821,9 @@ body::-webkit-scrollbar-thumb {
   transform: skew(160deg);
   background-color: rgb(64, 24, 239);
   z-index: -2;
-
-
 }
 
-.box__green-left {
-  position: absolute;
-  width: 3%;
-  height: 35%;
-  top: 50%;
-  left: 12%;
-  transform: skew(160deg);
-  /* background-color: #ffcc00; */
-  background: linear-gradient(to right, #ff7f00, #ffcc00);
-  opacity: 0.8;
-
-}
-
-.box__black-left {
+.box__second-left {
   position: absolute;
   width: 5%;
   height: 35%;
@@ -860,7 +834,52 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(to right, rgb(64, 24, 239), #ff7f00);
 }
 
-.box__orange-right {
+.box__third-left {
+  position: absolute;
+  width: 5%;
+  height: 49%;
+  left: 7.8%;
+  transform: skew(160deg);
+  background-color: #ff7f00;
+  opacity: 0.8;
+}
+
+.box__fourth-left {
+  position: absolute;
+  width: 3%;
+  height: 35%;
+  top: 48%;
+  left: 11.9%;
+  transform: skew(160deg);
+  /* background-color: #ffcc00; */
+  background: linear-gradient(to right, #ff7f00, #ffcc00);
+  opacity: 0.8;
+
+}
+
+.box__first-right {
+  position: absolute;
+  width: 3%;
+  height: 29%;
+  top: 71%;
+  right: 15.8%;
+  transform: skew(160deg);
+  /* background-color: rgb(30, 126, 209); */
+  background: linear-gradient(to top, rgb(30, 126, 209), #d5d5d5);
+}
+
+.box__second-right {
+  position: absolute;
+  width: 5%;
+  height: 25%;
+  right: 14.2%;
+  transform: skew(160deg);
+  /* background-color: rgb(209, 0, 111); */
+  background: linear-gradient(rgb(209, 0, 111), #d5d5d5);
+  z-index: -2;
+}
+
+.box__third-right {
   position: absolute;
   width: 15%;
   height: 47%;
@@ -870,19 +889,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #d5d5d5;
 }
 
-.box__blue-right {
-  position: absolute;
-  width: 3%;
-  height: 29%;
-  top: 71%;
-  right: 15.8%;
-  transform: skew(160deg);
-  /* background-color: rgb(30, 126, 209); */
-  background: linear-gradient(to top, rgb(30, 126, 209), #d5d5d5);
-
-}
-
-.box__green-right {
+.box__fourth-right {
   position: absolute;
   width: 10%;
   height: 100%;
@@ -890,20 +897,8 @@ body::-webkit-scrollbar-thumb {
   transform: skew(160deg);
   /* background-color: green; */
   background: linear-gradient(to bottom, green, #d5d5d5 30%, green);
-
   z-index: -2;
   opacity: 0.7;
-}
-
-.box__black-right {
-  position: absolute;
-  width: 5%;
-  height: 25%;
-  right: 14.2%;
-  transform: skew(160deg);
-  /* background-color: rgb(209, 0, 111); */
-  background: linear-gradient(rgb(209, 0, 111), #d5d5d5);
-  z-index: -2;
 }
 
 .header__container {
@@ -1125,14 +1120,14 @@ body::-webkit-scrollbar-thumb {
 .help__tooltip-text {
   margin: 0;
   text-align: center;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 14px;
   font-weight: 400;
   color: #FFFFFF;
 }
 
 .help__tooltip-text-span {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 20px;
   font-weight: 700;
   color: #FFFFFF;
@@ -1161,6 +1156,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 1710px) {
+  .box__first-right {
+    right:18%;
+  }
+
+  .box__second-right {
+    right:16%;
+  }
+
+  .box__third-right {
+    width: 17%;
+  }
+
   .intro-container {
     max-width: 1920px;
   }
@@ -1176,6 +1183,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 1420px) {
+  .box__first-right {
+    height: 22%;
+    right:20.1%;
+    top:78%;
+  }
+
+  .box__second-right {
+    right:17.3%;
+  }
+
+  .box__third-right {
+    width: 19%;
+    height: 55%;
+  }
+
   .header__btn {
     padding: 10px;
     min-width: 250px;
@@ -1191,6 +1213,39 @@ body::-webkit-scrollbar-thumb {
 
 
 @media (max-width: 1200px) {
+  .box__first-left {
+    width: 6%;
+    left:-3%;
+  }
+
+  .box__second-left {
+    left: 9%;
+    height: 49%;
+  }
+
+  .box__third-left {
+    top: 49%;
+    width: 4%;
+    left:11.5%;
+  }
+
+  .box__first-right {
+    height: 30%;
+    right:21.8%;
+    top:70%;
+  }
+
+  .box__second-right {
+    right:18%;
+    top:-16px;
+  }
+
+  .box__third-right {
+    width: 20%;
+    height: 55%;
+    top:15%;
+  }
+
   .intro-container {
     height: 110px;
   }
