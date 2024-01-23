@@ -1094,7 +1094,7 @@ body::-webkit-scrollbar-thumb {
 
 .help__tooltip-container {
   position: absolute;
-  bottom: 0%;
+  bottom: 10px;
   left: 10px;
   z-index: 1;
   opacity: 1;
@@ -1343,8 +1343,8 @@ body::-webkit-scrollbar-thumb {
     gap: 10px;
   } */
 
-  .help__tooltip-container {
+  /* .help__tooltip-container {
     bottom: -60px;
-  }
+  } */
 
 }
