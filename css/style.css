@@ -984,10 +984,8 @@ body::-webkit-scrollbar-thumb {
   color: transparent;
   font-family: 'Bitter', sans-serif;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-
-  background-image: linear-gradient(45deg, #576d1c, green);
+  background-image: linear-gradient(45deg, #688220 40%, rgb(3, 106, 3));
   background-clip: text;
-  -webkit-background-clip: text;
 }
 
 .header__btn {
@@ -1160,8 +1158,8 @@ body::-webkit-scrollbar-thumb {
 
 .help__tooltip-btn-close {
   position: absolute;
-  top: -40px;
-  right: -40px;
+  top: -50px;
+  right: -10px;
   z-index: 1;
   width: 35px;
   height: 35px;
