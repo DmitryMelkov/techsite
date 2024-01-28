@@ -575,7 +575,6 @@ td.storyLeft {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  gap: 5px;
   width: 70%;
 
   position: absolute;
@@ -611,12 +610,18 @@ td.storyLeft {
   padding-left: 0;
 }
 
+.content-nav__intro li {
+  margin-right: 10px;
+}
+
+.content-nav__intro li:last-child {
+  margin-right: 0;
+}
+
 .content-nav__intro.active {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  row-gap: 5px;
-  column-gap: 15px;
 }
 
 .content-nav__link {
@@ -942,7 +947,6 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
   position: absolute;
   top: 20%;
   left: 10%;
@@ -965,11 +969,13 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  margin-right: 10px;
 }
 
 .logo__title img {
   width: 30px;
+  margin-right: 10px;
+
 }
 
 .header__btn-container {
@@ -981,11 +987,11 @@ body::-webkit-scrollbar-thumb {
   font-size: 30px;
   line-height: 40px;
   font-weight: 600;
-  color: transparent;
+  color: #688220;
   font-family: 'Bitter', sans-serif;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  background-image: linear-gradient(45deg, #688220 40%, rgb(3, 106, 3));
-  background-clip: text;
+  /* background-image: linear-gradient(45deg, #688220 40%, rgb(3, 106, 3)); */
+  /* background-clip: text; */
 }
 
 .header__btn {
@@ -1034,6 +1040,7 @@ body::-webkit-scrollbar-thumb {
 .content__btn-tech-back,
 .library__btn-libr-back {
   padding: 5px;
+  margin-left: 20px;
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
@@ -1072,7 +1079,7 @@ body::-webkit-scrollbar-thumb {
   width: 70%;
   position: absolute;
   top: 30%;
-  left: 10%;
+  left: 5%;
   z-index: 1;
   opacity: 0;
   transform: translateX(-2000px);
@@ -1233,7 +1240,6 @@ body::-webkit-scrollbar-thumb {
   }
 
   .header__container {
-    gap: 10px;
     justify-content: space-between;
   }
 
@@ -1327,22 +1333,18 @@ body::-webkit-scrollbar-thumb {
     line-height: 22px;
   }
 
+  .header__container {
+    left: 5%;
+  }
+
   .content,
   .library {
-    max-width: 650px;
+    max-width: 850px;
     top: 20%;
   }
 
   .content {
     top: 12%;
   }
-
-  /* .content__list {
-    gap: 10px;
-  } */
-
-  /* .help__tooltip-container {
-    bottom: -60px;
-  } */
 
 }
