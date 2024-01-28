@@ -741,6 +741,13 @@ td.storyLeft {
   outline: none;
 }
 
+.page-sidebar__link-download {
+  font-size: 14px;
+  line-height: 14px;
+  color: green;
+  font-weight: 500;
+}
+
 .calendar {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -1208,6 +1215,102 @@ body::-webkit-scrollbar-thumb {
 
 .help__tooltip-link:visited {
   color: white;
+}
+
+
+
+.page-content {
+  padding: 10px 30px 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content__title {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.page-content__box {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-content__link {
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+  color: green;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition: color 0.3s ease-in-out;
+}
+
+.page-content__link::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: 1;
+  width: 0;
+  height: 1px;
+  background-color: green;
+  transition: width .3s ease-in-out;
+}
+
+.page-content__link:hover::before {
+  width: 100%;
+}
+
+.page-content__link:active::before {
+  width: 100%;
+}
+
+.page-content__link:focus::before {
+  width: 100%;
+}
+
+.page-content__link:focus {
+  outline: none;
+}
+
+.page-content__link-download {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 14px;
+  color: green;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid green;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.page-content__link-download:first-child {
+  border-right: none;
+}
+
+.page-content__link-download:hover {
+  background-color: green;
+  color: white;
+}
+
+.page-content__link-download:active {
+  background-color: green;
+  color: white;
+}
+
+.page-content__link-download:focus {
+  background-color: green;
+  color: white;
+}
+
+.page-content__link-container {
+  display: flex;
 }
 
 @media (max-width: 2800px) {

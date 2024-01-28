@@ -392,3 +392,46 @@ if (notisPechVrMonth) {
     reportMonthFunc(notisPechVrMonthPath);
   });
 }
+
+//gorelki
+const sushilkiGorelki = document.querySelector('.sushilka-gorelki-js');
+const sushilkiGorelkiPath = 'http://Techsite4/kaskad/graphics/sushilki-gorelki/';
+const sushilkiGorelkiPathName = '_sushilki-gorelki.jpg';
+
+if (sushilkiGorelki) {
+  sushilkiGorelki.addEventListener('click', (e) => {
+    e.preventDefault();
+    graphicFunc(sushilkiGorelkiPath, sushilkiGorelkiPathName);
+  });
+}
+
+const pechVR = document.querySelector('.pechvr-gorelki-js');
+const pechVRPath = 'http://Techsite4/kaskad/graphics/pechVR-gorelki/';
+const pechVRPathName = '_pechVR-gorelki.jpg';
+
+if (pechVR) {
+  pechVR.addEventListener('click', (e) => {
+    e.preventDefault();
+    graphicFunc(pechVRPath, pechVRPathName);
+  });
+}
+
+const gorelkiLDay = document.querySelector('.energy-reports-gorelki-l-day-js');
+const gorelkiLDayPath = 'http://TechSite4/kaskad/reports/sorbent/Day/gorelki/gorelki_';
+
+if (gorelkiLDay) {
+  gorelkiLDay.addEventListener('click', (e) => {
+    e.preventDefault();
+    reportDayFunc(gorelkiLDayPath);
+  });
+}
+
+const gorelkiMonth = document.querySelector('.energy-reports-gorelki-m-js');
+const gorelkiMonthPath = 'http://TechSite4/kaskad/reports/sorbent/Month/gorelki/gorelki_';
+
+if (gorelkiMonth) {
+  gorelkiMonth.addEventListener('click', (e) => {
+    e.preventDefault();
+    reportMonthFunc(gorelkiMonthPath);
+  });
+}

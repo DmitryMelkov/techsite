@@ -207,28 +207,28 @@ if (prirodGazMonth) {
 //   });
 // }
 
-//electricalReports
-// const electricalReportsCurrentM = document.querySelector('.electrical-reports-current-m-js');
-// const electricalReportsChoseM = document.querySelector('.electrical-reports-chose-m-js');
+// electricalReports
+const electricalReportsCurrentM = document.querySelector('.electrical-reports-current-m-js');
+const electricalReportsChoseM = document.querySelector('.electrical-reports-chose-m-js');
 
-// function electricReports_currentM() {
-//   const SelYear = tbSelYear.value;
-//   const FileName = 'http://TechSite/TechSite/DOCS/Electric/' + '2023' + '/askue_tomonth.htm';
-//   parent.FrD.location = FileName;
-// }
+const electricReports_currentM = () => {
+  const SelYear = tbSelYear.value;
+  const FileName = 'http://TechSite3/kaskad/Reports/Electric/' + '2024' + '/askue_tomonth.htm';
+  parent.FrD.location = FileName;
+};
 
-// function electricReports_choseM() {
-//   const SelDate = tbSelDate.value;
-//   const SelMonth = tbSelMonth.value;
-//   const SelYear = tbSelYear.value;
-//   const FileName = 'http://TechSite/TechSite/DOCS/Electric/' + SelYear + '/askue_month_' + SelMonth + '.htm';
-//   parent.FrD.location = FileName;
-// }
+const electricReports_choseM = () => {
+  const SelDate = tbSelDate.value;
+  const SelMonth = tbSelMonth.value;
+  const SelYear = tbSelYear.value;
+  const FileName = 'http://TechSite3/kaskad/Reports/Electric/' + SelYear + '/askue_month_' + SelMonth + '.htm';
+  parent.FrD.location = FileName;
+};
 
-// if (electricalReportsCurrentM) {
-//   electricalReportsCurrentM.addEventListener('click', electricReports_currentM);
-// }
+if (electricalReportsCurrentM) {
+  electricalReportsCurrentM.addEventListener('click', electricReports_currentM);
+}
 
-// if (electricalReportsChoseM) {
-//   electricalReportsChoseM.addEventListener('click', electricReports_choseM);
-// }
+if (electricalReportsChoseM) {
+  electricalReportsChoseM.addEventListener('click', electricReports_choseM);
+}
