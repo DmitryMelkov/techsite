@@ -1313,6 +1313,11 @@ body::-webkit-scrollbar-thumb {
   display: flex;
 }
 
+/* video */
+.page-content__video-item {
+  width: 400px;
+}
+
 @media (max-width: 2800px) {
   .intro-container {
     max-width: 2800px;
