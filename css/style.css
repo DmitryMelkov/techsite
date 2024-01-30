@@ -643,8 +643,6 @@ td.storyLeft {
   opacity: 0.5;
 }
 
-
-
 .content__list {
   margin-bottom: 7px;
   display: flex;
@@ -1314,9 +1312,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* video */
-.page-content__video-item {
+/* .page-content__video-item {
   width: 400px;
-}
+} */
+
 
 @media (max-width: 2800px) {
   .intro-container {
